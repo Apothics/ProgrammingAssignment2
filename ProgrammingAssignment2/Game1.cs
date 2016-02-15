@@ -18,10 +18,13 @@ namespace ProgrammingAssignment2
         SpriteBatch spriteBatch;
 
         // STUDENTS: declare variables for three sprites
-
+        Texture2D sprite0;
+        Texture2D sprite1;
+        Texture2D sprite2;
 
         // STUDENTS: declare variables for x and y speeds
-
+        const int xSpeed = 10;
+        const int ySpeed = 10;
 
         // used to handle generating random values
         Random rand = new Random();
