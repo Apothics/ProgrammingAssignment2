@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Input;
 namespace ProgrammingAssignment2
 {
     /// <summary>
-    /// This is the main type for your game
+    /// This is the main type for your game.
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
