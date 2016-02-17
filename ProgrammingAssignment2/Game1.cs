@@ -67,10 +67,12 @@ namespace ProgrammingAssignment2
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // STUDENTS: load the sprite images here
-
+            sprite0 = Content.Load<Texture2D>(@"graphics\teddybear0");
+            sprite1 = Content.Load<Texture2D>(@"graphics\teddybear1");
+            sprite2 = Content.Load<Texture2D>(@"garaphics\teddybear2");
 
             // STUDENTS: set the currentSprite variable to one of your sprite variables
-
+            currentSprite = sprite0;
         }
 
         /// <summary>
