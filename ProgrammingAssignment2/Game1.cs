@@ -69,7 +69,7 @@ namespace ProgrammingAssignment2
             // STUDENTS: load the sprite images here
             sprite0 = Content.Load<Texture2D>(@"graphics\teddybear0");
             sprite1 = Content.Load<Texture2D>(@"graphics\teddybear1");
-            sprite2 = Content.Load<Texture2D>(@"garaphics\teddybear2");
+            sprite2 = Content.Load<Texture2D>(@"graphics\teddybear2");
 
             // STUDENTS: set the currentSprite variable to one of your sprite variables
             currentSprite = sprite0;
@@ -121,11 +121,13 @@ namespace ProgrammingAssignment2
                 //}
 
                 // STUDENTS: set the drawRectangle.Width and drawRectangle.Height to match the width and height of currentSprite
-
+                drawRectangle.Width = currentSprite.Width;
+                drawRectangle.Height = currentSprite.Height;
 
                 // STUDENTS: center the draw rectangle in the window. Note that the X and Y properties of the rectangle
                 // are for the upper left corner of the rectangle, not the center of the rectangle
-
+                drawRectangle.X = WindowWidth / 2;
+                drawRectangle.Y = WindowHeight / 2;
 
                 // STUDENTS: write code below to generate random numbers  between -4 and 4 inclusive for the x and y speed 
 				// using the rand field I provided
@@ -148,7 +150,9 @@ namespace ProgrammingAssignment2
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // STUDENTS: draw current sprite here
-
+            spriteBatch.Begin();
+            spriteBatch.Draw(sprite0, drawRectangle, Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
