@@ -102,23 +102,23 @@ namespace ProgrammingAssignment2
 
                 // STUDENTS: uncomment the code below and make it generate a random number 
                 // between 0 and 2 inclusive using the rand field I provided
-                //int spriteNumber = ;
+                int spriteNumber = rand.Next(0,2);
 
                 // sets current sprite
                 // STUDENTS: uncomment the lines below and change sprite0, sprite1, and sprite2
                 //      to the three different names of your sprite variables
-                //if (spriteNumber == 0)
-                //{
-                //    currentSprite = sprite0;
-                //}
-                //else if (spriteNumber == 1)
-                //{
-                //    currentSprite = sprite1;
-                //}
-                //else if (spriteNumber == 2)
-                //{
-                //    currentSprite = sprite2;
-                //}
+                if (spriteNumber == 0)
+                {
+                    currentSprite = sprite0;
+                }
+                else if (spriteNumber == 1)
+                {
+                    currentSprite = sprite1;
+                }
+                else if (spriteNumber == 2)
+                {
+                    currentSprite = sprite2;
+                }
 
                 // STUDENTS: set the drawRectangle.Width and drawRectangle.Height to match the width and height of currentSprite
                 drawRectangle.Width = currentSprite.Width;
