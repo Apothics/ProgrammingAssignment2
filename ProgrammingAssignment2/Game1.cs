@@ -151,7 +151,7 @@ namespace ProgrammingAssignment2
 
             // STUDENTS: draw current sprite here
             spriteBatch.Begin();
-            spriteBatch.Draw(sprite0, drawRectangle, Color.White);
+            spriteBatch.Draw(currentSprite, drawRectangle, Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);
