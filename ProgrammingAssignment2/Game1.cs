@@ -102,7 +102,7 @@ namespace ProgrammingAssignment2
 
                 // STUDENTS: uncomment the code below and make it generate a random number 
                 // between 0 and 2 inclusive using the rand field I provided
-                int spriteNumber = rand.Next(0,3);
+                int spriteNumber = rand.Next(0,2);
 
                 // sets current sprite
                 // STUDENTS: uncomment the lines below and change sprite0, sprite1, and sprite2
