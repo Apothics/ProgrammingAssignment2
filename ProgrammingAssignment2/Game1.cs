@@ -23,8 +23,8 @@ namespace ProgrammingAssignment2
         Texture2D sprite2;
 
         // STUDENTS: declare variables for x and y speeds
-        const int xSpeed = 10;
-        const int ySpeed = 10;
+        int xSpeed = 10;
+        int ySpeed = 10;
 
         // used to handle generating random values
         Random rand = new Random();
@@ -130,14 +130,17 @@ namespace ProgrammingAssignment2
                 drawRectangle.Y = WindowHeight / 2;
 
                 // STUDENTS: write code below to generate random numbers  between -4 and 4 inclusive for the x and y speed 
-				// using the rand field I provided
+                // using the rand field I provided
                 // CAUTION: Don't redeclare the x speed and y speed variables here!
-
+                int randNumber = rand.Next(-4, 4);
+                xSpeed = randNumber;
+                ySpeed = randNumber;
+                
             }
 
             // STUDENTS: move the drawRectangle by the x speed and the y speed
-
-
+            drawRectangle.Offset(xSpeed, ySpeed);
+            
             base.Update(gameTime);
         }
 
