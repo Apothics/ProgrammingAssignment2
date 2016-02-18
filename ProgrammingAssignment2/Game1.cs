@@ -102,7 +102,7 @@ namespace ProgrammingAssignment2
 
                 // STUDENTS: uncomment the code below and make it generate a random number 
                 // between 0 and 2 inclusive using the rand field I provided
-                int spriteNumber = rand.Next(0,2);
+                int spriteNumber = rand.Next(0,3);
 
                 // sets current sprite
                 // STUDENTS: uncomment the lines below and change sprite0, sprite1, and sprite2
@@ -132,7 +132,7 @@ namespace ProgrammingAssignment2
                 // STUDENTS: write code below to generate random numbers  between -4 and 4 inclusive for the x and y speed 
                 // using the rand field I provided
                 // CAUTION: Don't redeclare the x speed and y speed variables here!
-                int randNumber = rand.Next(-4, 4);
+                int randNumber = rand.Next(-4, 5);
                 xSpeed = randNumber;
                 ySpeed = randNumber;
                 
